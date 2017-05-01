@@ -10,8 +10,10 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        NSMutableArray *myArray = [[NSMutableArray alloc] initWithObjects:@[], nil];
+        
+        NSLog(@"The value at the nth element is %i", myArray[]);
     }
     return 0;
 }
