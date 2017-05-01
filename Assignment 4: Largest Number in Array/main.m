@@ -11,9 +11,20 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        NSMutableArray *myArray = [[NSMutableArray alloc] initWithObjects:@[], nil];
+        NSArray *unsortedNumbers = @[@3, @7, @6, @88, @44];
         
-        NSLog(@"The value at the nth element is %i", myArray[]);
+        NSNumber *largestNumber = 0;
+        
+        for (int i = 0; i < [unsortedNumbers count]; i++)
+        {
+            NSNumber *number = [unsortedNumbers objectAtIndex:i];
+            if (largestNumber < number)
+            {
+                largestNumber = number;
+            }
+        }
+        
+        NSLog(@"\nThe largest number is %@", largestNumber);
     }
     return 0;
 }
