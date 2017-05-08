@@ -7,24 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FindNumber.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         NSArray *unsortedNumbers = @[@3, @7, @6, @88, @44];
+        FindNumber *findNumber = [[FindNumber alloc] init];
         
-        NSNumber *largestNumber = 0;
-        
-        for (int i = 0; i < [unsortedNumbers count]; i++)
-        {
-            NSNumber *number = [unsortedNumbers objectAtIndex:i];
-            if (largestNumber < number)
-            {
-                largestNumber = number;
-            }
-        }
-        
-        NSLog(@"\nThe largest number is %@", largestNumber);
+        NSLog(@"\nThe largest number is %@.\n", [findNumber getLargestNumber:unsortedNumbers]);
+        NSLog(@"\nThe smallest number is %@.\n", [findNumber getSmallestNumber:unsortedNumbers]);
+        NSLog(@"\nThe median number is %.1f.\n", [findNumber getMedianNumber:unsortedNumbers]);
+
     }
     return 0;
 }

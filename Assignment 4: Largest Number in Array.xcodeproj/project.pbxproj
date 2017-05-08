@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A38C3381EBFD0210009D996 /* FindNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A38C3371EBFD0210009D996 /* FindNumber.m */; };
 		6AAF69351EB6BB8D001C0638 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF69341EB6BB8D001C0638 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6A38C3361EBFD0210009D996 /* FindNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindNumber.h; sourceTree = "<group>"; };
+		6A38C3371EBFD0210009D996 /* FindNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindNumber.m; sourceTree = "<group>"; };
 		6AAF69311EB6BB8D001C0638 /* Assignment 4: Largest Number in Array */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Assignment 4: Largest Number in Array"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AAF69341EB6BB8D001C0638 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				6AAF69341EB6BB8D001C0638 /* main.m */,
+				6A38C3361EBFD0210009D996 /* FindNumber.h */,
+				6A38C3371EBFD0210009D996 /* FindNumber.m */,
 			);
 			path = "Assignment 4: Largest Number in Array";
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AAF69351EB6BB8D001C0638 /* main.m in Sources */,
+				6A38C3381EBFD0210009D996 /* FindNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +254,7 @@
 				6AAF693A1EB6BB8D001C0638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
